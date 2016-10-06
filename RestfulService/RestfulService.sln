@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestfulService.Domain", "RestfulService.Domain\RestfulService.Domain.csproj", "{28E49A8D-934C-4183-BE90-497E619DCE8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestfulService.API", "RestfulService.API\RestfulService.API.csproj", "{081AF230-493B-451F-90A7-77C700420966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28E49A8D-934C-4183-BE90-497E619DCE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E49A8D-934C-4183-BE90-497E619DCE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E49A8D-934C-4183-BE90-497E619DCE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E49A8D-934C-4183-BE90-497E619DCE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{081AF230-493B-451F-90A7-77C700420966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{081AF230-493B-451F-90A7-77C700420966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{081AF230-493B-451F-90A7-77C700420966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{081AF230-493B-451F-90A7-77C700420966}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
