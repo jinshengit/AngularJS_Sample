@@ -41,5 +41,39 @@ namespace RestfulService.Domain
                 return _products;
             }
         }
+
+        private static IList<Order> _orders;
+        public static IList<Order> Orders
+        {
+            get
+            {
+                if(_orders == null)
+                {
+                    _orders = new List<Order>();
+                }
+                return _orders;
+            }
+            set
+            {
+                _orders = value;
+            }
+        }
+
+        private static IList<User> _users;
+        public static IList<User> Users
+        {
+            get
+            {
+                if(_users == null)
+                {
+                    _users = new List<User>();
+                }
+                return _users;
+            }
+            set
+            {
+                _users = value;
+            }
+        }
     }
 }

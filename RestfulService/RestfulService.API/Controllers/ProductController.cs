@@ -15,9 +15,11 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace RestfulService.API.Controllers
 {
+    //[EnableCors(origins: "*", headers: "*", methods: "*")]
     public class ProductController : ApiController
     {
         public IEnumerable<Product> GetAllProducts()
@@ -46,12 +48,12 @@ namespace RestfulService.API.Controllers
         [HttpPut]
         public void UpdateProduct(Product product)
         {
-            this.DeleteProduct(product.Id.ToString());
+            this.Delete(product.Id.ToString());
             DataFactory.Products.Add(product);
         }
 
         [HttpDelete]
-        public void DeleteProduct(string id)
+        public void Delete(string id)
         {
             Product product = this.GetProduct(id);
             if (null != product)
@@ -59,5 +61,11 @@ namespace RestfulService.API.Controllers
                 DataFactory.Products.Remove(product);
             }
         }
+
+        //[HttpGet]
+        //public string SimpleString()
+        //{
+        //    return "This is for action invoke";
+        //}
     }
 }
